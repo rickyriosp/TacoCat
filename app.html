@@ -61,8 +61,31 @@
     <main class="flex-shrink-0">
         <div class="container px-4 py-5">
             <div class="row row-cols-1 row-cols-lg-2 g-5 py-5">
-                <div class="col"></div>
-                <div class="col"></div>
+                <div class="col-lg-5 border-2 border-end">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">TACO CAT: A Coding Project</h1>
+                    <h4 class="lead">Taco Cat is a palindrome. A palindrome is a word or phrase that reads the same backward as forward. Write a program to determine if the word or phrase entered is a palindrome.
+                    </h4>
+                </div>
+                <div class="col-lg-7">
+                    <h5 class="border-1 border-bottom border-danger">Enter a phrase or word to check.</h5>
+                    <form class="row row gx-3 gy-2">
+                        <div class="col">
+                            <input type="text" id="userString" class="form-control" placeholder="Enter A String" aria-label="Enter A String">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" id="btnSubmit" class="btn btn-dark">Check It.</button>
+                        </div>
+                        <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert">
+                            <h4 class="alert-heading" id="alertHeading">
+                                <!-- Insert Heading Here -->
+                            </h4>
+                            <hr>
+                            <p class="mb-0" id="msg">
+                                <!-- Insert A Messgae Here -->
+                            </p>
+                        </div>                        
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -95,6 +118,9 @@
 
     <!-- Custom JS -->
     <script src="/js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getString);
+    </script>
 </body>
 
 </html>

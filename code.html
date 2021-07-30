@@ -67,9 +67,15 @@
                     <pre data-src="/js/site.js" class="line-numbers"></pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structured in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that displays an alert with a message of "Hello World".</p>
+                    <p>The Code is structured in three functions.</p>
+                    <h5 class="pb-2 border-bottom border-2">getString()</h5>
+                    <p>The <strong>getString()</strong> function is responsible for retrieving the string the user provides in the input field. It will then pass the string to the <strong>checkPalindrome()</strong> function and call the <strong>displayMessage()</strong> function, which are described below.</p>
+                    <br>
+                    <h5 class="pb-2 border-bottom border-2">checkPalindrome()</h5>
+                    <p>The <strong>checkPalindrome()</strong> function takes one parameter which is the string to check for palindrome. The string is processed to get rid of whitespaces and special characters, as well as converting it to all lower case. It then splits the string into an array of its individual characters. This array is then reversed and joined to form a string once again. The initial string is compared to the reversed string and an object with the results is returned.</p>
+                    <br>
+                    <h5 class="pb-2 border-bottom border-2">displayMessage()</h5>
+                    <p>The <strong>displayMessage()</strong> function takes one parameter which is the object with the results. A heading message is displayed depending if the string is a palindorme or not. The reversed string is added to the .innerHTML property of the &lt;p> tag that holds the message. Finally the alert card is made visible.</p>
                 </div>
             </div>
         </div>
